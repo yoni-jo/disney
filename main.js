@@ -35,6 +35,15 @@ function scroll() {
 
          
 
+        }else if(window.scrollY< header.offsetHeight){
+            sectionsList[0].style.backgroundPosition = `50% 50px`;
+            
+                
+            sectionsList[1].style.backgroundPosition = `50% 50px`;
+          
+           
+             sectionsList[2].style.backgroundPosition = `50% 50px`;
+
         }
        ;
  
