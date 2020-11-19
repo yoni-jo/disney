@@ -1,0 +1,158 @@
+header {
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    display: flex;
+}
+
+header #logo_Top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    padding-left: calc(50% - 80px);
+
+}
+
+header #logo_Top a {
+    display: inline-block;
+    width: 160px;
+    height: 62px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+}
+
+header nav#menu {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header nav#menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+header nav#menu ul li {
+    
+    font-size:0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    margin-right: 10%;
+}
+header nav#menu ul ul {
+    display: none;
+}
+
+header nav#menu ul li>ul li:first-child {
+    margin-left: 0;
+}
+
+header nav#menu ul li>ul li {
+    text-align: center;
+    font-size: 12px;
+    margin: 20px 0 20px;
+}
+
+/* 메뉴호버시 */
+header nav#menu ul>li:hover {
+    border-bottom: 1px solid white;
+}
+header nav#menu ul>li.event {
+    border-bottom: 0px;
+}
+header nav#menu ul li:hover>ul {
+    position: fixed;
+    flex-direction: column;
+    display: block;
+}
+
+header nav#menu ul li:first-child {
+    margin-left: 20%;
+}
+
+header nav#menu ul li.event {
+    position: relative;
+    background-color: #1860c9;
+    padding-right: 30%;
+    padding-top: 6px;
+    padding-bottom: 3px;
+}
+
+header nav#menu ul li.event:before {
+    position: absolute;
+    top: -2px;
+    left: -17px;
+    content: ' ';
+    border-color: #1860c9;
+    border-bottom: 30px solid #1860c9;
+    border-left: 17px solid transparent;
+}
+
+
+/* disney세션 */
+
+#disney {
+    background-image: url(../img/bg-d.jpg);
+
+}
+
+/* marble세션 */
+#marble {
+    background-image: url(../img/bg-m.jpg);
+
+}
+
+/* starwars세션 */
+#starwars {
+    background-image: url(../img/bg-s.jpg);
+}
+
+/* footer영역 */
+
+footer {
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 47px;
+    background-color: #363636;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p>img {
+    vertical-align: middle;
+}
+
+footer p {
+    line-height: 46px;
+    padding: 0 60px 0;
+    font-size: 10px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+}
+
+footer li {
+    margin-right: 30px;
+    font-size: 10px;
+}
+
+footer li:last-child {
+    margin-right: 0;
+}
+
+footer span {
+    padding-left: 20px;
+}

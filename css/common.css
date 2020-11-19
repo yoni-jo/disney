@@ -1,0 +1,84 @@
+/* ####공통적용#### */
+html,
+body,
+#wrap,
+p,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color:white
+}
+
+section {
+    width: 100%;
+    min-height: 504.8px;
+    background-repeat: no-repeat;
+    background-position: 50% 50px;
+    background-size: auto 100%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+section ul {
+    display: flex;
+}
+
+section li {
+    padding-right: 50px;
+    position: relative;
+}
+
+section img {
+    width: 274px;
+    height: 116px;
+    margin-bottom: 20px;
+    animation: fadein 1s;
+}
+
+section li a {
+    color: white;
+
+    animation: fadein 1s;
+}
+
+section li:before{
+    
+    right: 25px;
+    display: inline-block;
+    position: absolute;
+    content: '|';
+    width: 1px;
+    color:white;
+}
+section li:last-child:before{
+    content: ' ';
+}
+
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%)
+    }
+
+
+}
