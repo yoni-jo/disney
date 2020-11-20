@@ -26,7 +26,7 @@ function scroll() {
     let first = 50 - num - 30;
     let second = first + num - 20;
     let third = second + (num / 10) - 40;
-    const header = document.querySelector("header.scroll")
+    const header = document.querySelector("header")
 
 
 
@@ -43,7 +43,7 @@ function scroll() {
 
 
     //스크롤시 헤더높이값보다 작을경우 초기값 유지하게 설정
-    } else if (window.scrollY < header.offsetHeight) {
+    } else if (window.scrollY <= header.offsetHeight) {
         sectionsList[0].style.backgroundPosition = `50% 50px`;
 
 

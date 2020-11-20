@@ -19,6 +19,9 @@ header.event_H {
     background-image: url(../img/event/header-bg.png);
     background-repeat: repeat-x;
     padding-bottom: 15px;
+    position:sticky;
+    top: 0;
+    z-index:1111;
 }
 
 header #logo_Top {
@@ -155,7 +158,8 @@ header nav#menu ul li.event:before {
 /* 이벤트페이지영역시작 */
 
 div.content {
-    width: 1200px;
+    width: 1100px;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -165,12 +169,14 @@ div.content div.event_title {
 }
 
 div.content div.event_title p {
+    margin-top: 20px;
     color: gray;
 }
 
 div.content div.event_title h1 {
     font-size: 53px;
     font-weight: normal;
+    margin-bottom: 20px;
 }
 
 /* 이벤트탭버튼 */
@@ -179,7 +185,8 @@ div.content div.event_tabmenu {}
 div.content div.event_tabmenu ul {
     display: flex;
     justify-content: space-around;
-
+    margin-bottom: 20px;
+    
 }
 
 div.content div.event_tabmenu ul li {
@@ -193,19 +200,36 @@ div.content div.event_tabmenu ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    position: relative;
 }
 
+div.content div.event_tabmenu ul li:after{
+    content: '▼';
+    position: absolute;
+    color: #1860c9;
+    bottom: -10px;
+    border-top: 25px;
+    transform: scaleX(2);
+}
 /* 이벤트리스트 */
-article {}
+article {margin-bottom: 200px;}
 
 article div.event_list {}
 
 article div.event_list ul {}
 
 article div.event_list ul li {
+    width: 352px;
 }
+article div.event_list ul li a{
+    text-align: left;
+    color: black;
+    
+}
+article div.event_list ul li a p{
+    font-size: 1em;
 
+}
 
 /* 이벤트페이지영역 끝 */
 /* footer영역 */
@@ -243,7 +267,7 @@ footer li {
 }
 
 footer li a{
-    color:white
+    color:white;
 }
 
 footer li:last-child {
