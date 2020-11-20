@@ -3,17 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1, maximum-scale=1,user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0 minimum-scale=1, maximum-scale=1,user-scalable=no">
     <title>월트디즈니 공식홈페이지</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="main.js "defer></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="main.js " defer></script>
 </head>
 
-<body>
+<body class="main">
     <div id="wrap">
-        <header>
-            <div id="logo_Top"><a href="#" class="logo">디즈니</a></div>
+        <!-- 헤더영역 -->
+        <header class="scroll">
+            <div id="logo_Top"><a href="index.html" class="logo">디즈니</a></div>
             <nav id="menu">
                 <ul>
                     <li>disney
@@ -38,12 +41,13 @@
                             <li>편성표</li>
                         </ul>
                     </li>
-                    <li class="event">event</li>
+                    <li class="event"><a href="event.html">event</a></li>
                 </ul>
             </nav>
         </header>
+        <!-- 콘텐츠영역 -->
         <section id="disney" class="scroll">
-            <img src="img/logo-d.png" alt="" class="disney_l">
+            <img src="img/main/logo-d.png" alt="" class="disney_l">
             <ul>
                 <li><a href="#">인스타그램</a></li>
                 <li><a href="#">페이스북</a></li>
@@ -53,7 +57,7 @@
         </section>
         <section id="marble" class="scroll">
 
-            <img src="img/logo-m.png" alt="" class="disney_l">
+            <img src="img/main/logo-m.png" alt="" class="disney_l">
             <ul>
                 <li><a href="#">인스타그램</a></li>
                 <li><a href="#">페이스북</a></li>
@@ -63,7 +67,7 @@
         </section>
         <section id="starwars">
 
-            <img src="img/logo-s.png" alt="" class="disney_l">
+            <img src="img/main/logo-s.png" alt="" class="disney_l">
             <ul>
                 <li><a href="#">인스타그램</a></li>
                 <li><a href="#">페이스북</a></li>
@@ -71,9 +75,10 @@
                 <li><a href="#">편성표</a></li>
             </ul>
         </section>
+        <!-- 푸터영역 -->
         <footer>
             <p>
-                <img src="img/logo-sm.png" alt="disney">
+                <img src="img/main/logo-sm.png" alt="disney">
                 <span>©Disney ©Disney/Pixar ©MARVEL © & ™ Lucasfilm Ltd.</span>
             </p>
 
