@@ -242,6 +242,10 @@ footer li {
     font-size: 10px;
 }
 
+footer li a{
+    color:white
+}
+
 footer li:last-child {
     margin-right: 0;
 }
