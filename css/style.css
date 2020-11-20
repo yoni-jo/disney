@@ -1,9 +1,24 @@
+/* header */
 header {
     overflow: hidden;
     width: 100%;
     height: 100px;
-    background-color: #000;
     display: flex;
+
+}
+
+/* 메인페이지는 class=main넣어서 사용 */
+body.main header {
+
+    background-color: #000000;
+    z-index: 222;
+}
+
+header.event_H {
+
+    background-image: url(../img/event/header-bg.png);
+    background-repeat: repeat-x;
+    padding-bottom: 15px;
 }
 
 header #logo_Top {
@@ -13,15 +28,22 @@ header #logo_Top {
     flex: 1;
     padding-left: calc(50% - 80px);
 
+
 }
 
 header #logo_Top a {
     display: inline-block;
     width: 160px;
     height: 62px;
-    background-image: url(../img/logo.png);
+    background-image: url(../img/event/logo.png);
+
     background-repeat: no-repeat;
     text-indent: -99999px;
+}
+
+body.main header #logo_Top a {
+    background-image: url(../img/main/logo.png);
+
 }
 
 header nav#menu {
@@ -40,13 +62,19 @@ header nav#menu ul {
 }
 
 header nav#menu ul li {
-    
-    font-size:0.9em;
+
+    font-size: 0.9em;
     font-weight: bold;
     text-transform: uppercase;
-    color: white;
+
     margin-right: 10%;
 }
+
+
+body.main header nav#menu ul li {
+    color: white;
+}
+
 header nav#menu ul ul {
     display: none;
 }
@@ -65,9 +93,17 @@ header nav#menu ul li>ul li {
 header nav#menu ul>li:hover {
     border-bottom: 1px solid white;
 }
+
 header nav#menu ul>li.event {
     border-bottom: 0px;
 }
+
+header nav#menu ul>li.event a {
+    color: white;
+    display: inline-block;
+
+}
+
 header nav#menu ul li:hover>ul {
     position: fixed;
     flex-direction: column;
@@ -84,6 +120,7 @@ header nav#menu ul li.event {
     padding-right: 30%;
     padding-top: 6px;
     padding-bottom: 3px;
+
 }
 
 header nav#menu ul li.event:before {
@@ -100,21 +137,77 @@ header nav#menu ul li.event:before {
 /* disney세션 */
 
 #disney {
-    background-image: url(../img/bg-d.jpg);
+    background-image: url(../img/main/bg-d.jpg);
 
 }
 
 /* marble세션 */
 #marble {
-    background-image: url(../img/bg-m.jpg);
+    background-image: url(../img/main/bg-m.jpg);
 
 }
 
 /* starwars세션 */
 #starwars {
-    background-image: url(../img/bg-s.jpg);
+    background-image: url(../img/main/bg-s.jpg);
 }
 
+/* 이벤트페이지영역시작 */
+
+div.content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 이벤트주제 */
+div.content div.event_title {
+    text-align: center;
+}
+
+div.content div.event_title p {
+    color: gray;
+}
+
+div.content div.event_title h1 {
+    font-size: 53px;
+    font-weight: normal;
+}
+
+/* 이벤트탭버튼 */
+div.content div.event_tabmenu {}
+
+div.content div.event_tabmenu ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+div.content div.event_tabmenu ul li {
+    text-align: center;
+    color: white;
+    background-color: #1860c9;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* 이벤트리스트 */
+article {}
+
+article div.event_list {}
+
+article div.event_list ul {}
+
+article div.event_list ul li {
+}
+
+
+/* 이벤트페이지영역 끝 */
 /* footer영역 */
 
 footer {

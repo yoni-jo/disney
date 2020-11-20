@@ -1,12 +1,4 @@
 /* ####공통적용#### */
-html,
-body,
-#wrap,
-p,
-section {
-    margin: 0;
-    padding: 0;
-}
 
 li {
     list-style: none;
@@ -15,9 +7,9 @@ li {
 
 a {
     text-decoration: none;
-    color:white
 }
-
+/* 공통적용끝 */
+/* 메인페이지 공통적용부분 */
 section {
     width: 100%;
     min-height: 504.8px;
@@ -82,3 +74,4 @@ section li:last-child:before{
 
 
 }
+/* 메인공통적용끝 */
